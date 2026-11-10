@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Johanna Rosales | Portfolio</title>
+<meta name="description" content="Portfolio of Johanna Alejandra Rosales Cornejo: projects, skills, certificates and contact.">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style type="text/tailwindcss">
+  @layer components {
+    .card { @apply rounded-3xl border-2 border-rose-200 bg-white p-6 shadow transition duration-200 hover:-translate-y-1 hover:border-rose-400 hover:shadow-lg motion-reduce:transition-none motion-reduce:hover:transform-none dark:border-rose-900 dark:bg-rose-950 dark:hover:border-rose-400; }
+    .chip { @apply rounded-full bg-rose-100 px-3 py-0.5 text-sm font-semibold text-rose-900 dark:bg-rose-900 dark:text-rose-100; }
+    .btn { @apply inline-block rounded-full border-2 border-rose-800 bg-rose-800 px-5 py-2 font-bold text-white hover:opacity-90; }
+    .btn-alt { @apply bg-transparent text-rose-800 dark:text-rose-300 dark:border-rose-300; }
+    .h2 { @apply mb-8 text-3xl font-extrabold text-rose-800 sm:text-4xl dark:text-rose-200; }
+    .field { @apply mt-1 w-full rounded-2xl border-2 border-rose-200 bg-white px-4 py-2 font-normal dark:border-rose-900 dark:bg-rose-950; }
+  }
+</style>
+</head>
+<body class="bg-rose-50 font-sans leading-relaxed text-rose-950 dark:bg-black dark:text-rose-100">
+
+<nav class="sticky top-0 z-20 border-b-2 border-rose-200 bg-rose-50/90 backdrop-blur dark:border-rose-900 dark:bg-black/90">
+  <ul class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-2 px-5 py-3 font-bold">
+    <li><a href="#home" class="text-xl text-rose-800 dark:text-rose-300">Johanna ✿</a></li>
+    <li class="flex gap-4 text-sm">
+      <a href="#about">About</a><a href="#tech">Tech</a><a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- HOME + ABOUT -->
+<header id="home" class="mx-auto grid max-w-5xl items-center gap-10 px-5 py-16 md:grid-cols-[1fr_280px]">
+  <div class="order-2 md:order-1">
+    <p class="text-rose-500">Hello, I'm</p>
+    <h1 class="text-4xl font-extrabold text-rose-800 sm:text-5xl dark:text-rose-200">Johanna Alejandra Rosales Cornejo</h1>
+    <p class="mt-2 text-xl font-bold text-rose-500">Software Developer</p>
+    <p id="about" class="mt-4 max-w-prose scroll-mt-24"><strong>About me.</strong> I am a student of the Supérate program in El Salvador, where I have spent three years learning to design, build and present real digital projects. I love combining creativity with technology, and I work well in teams. My main strengths are problem solving, clear communication and finishing what I start.</p>
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a class="btn" href="#projects">See my projects ↓</a>
+    </div>
+  </div>
+  <!-- Put your photo at img/me.jpg -->
+  <img class="order-1 mx-auto aspect-square w-56 rounded-full border-4 border-rose-300 bg-rose-100 object-cover md:order-2 md:w-full" src="img/Johanna.jpeg" alt="Portrait of Johanna Rosales">
+</header>
+
+<main>
+<!-- TECH -->
+<section id="tech" class="mx-auto max-w-5xl scroll-mt-16 px-5 py-10">
+  <h2 class="h2 !mb-6">Tech Stack</h2>
+  <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="card !p-5">
+      <h3 class="mb-3 flex items-center gap-3 font-bold"><span class="grid size-9 place-items-center rounded-full bg-rose-100 text-lg dark:bg-rose-900">🖥️</span>Frontend</h3>
+      <ul class="flex flex-wrap gap-2"><li class="chip">HTML5</li><li class="chip">CSS3</li><li class="chip">JavaScript</li><li class="chip">Tailwind CSS</li><li class="chip">Next.js</li><li class="chip">Shadcn</li></ul>
+    </div>
+    <div class="card !p-5">
+      <h3 class="mb-3 flex items-center gap-3 font-bold"><span class="grid size-9 place-items-center rounded-full bg-rose-100 text-lg dark:bg-rose-900">⚙️</span>Backend &amp; Auth</h3>
+      <ul class="flex flex-wrap gap-2"><li class="chip">Python</li><li class="chip">Prisma</li><li class="chip">Clerk</li></ul>
+    </div>
+    <div class="card !p-5">
+      <h3 class="mb-3 flex items-center gap-3 font-bold"><span class="grid size-9 place-items-center rounded-full bg-rose-100 text-lg dark:bg-rose-900">🗄️</span>Databases</h3>
+      <ul class="flex flex-wrap gap-2"><li class="chip">SQL</li><li class="chip">PostgreSQL</li><li class="chip">Supabase</li></ul>
+    </div>
+    <div class="card !p-5">
+      <h3 class="mb-3 flex items-center gap-3 font-bold"><span class="grid size-9 place-items-center rounded-full bg-rose-100 text-lg dark:bg-rose-900">🎨</span>Design</h3>
+      <ul class="flex flex-wrap gap-2"><li class="chip">Figma</li><li class="chip">Canva</li></ul>
+    </div>
+    <div class="card !p-5">
+      <h3 class="mb-3 flex items-center gap-3 font-bold"><span class="grid size-9 place-items-center rounded-full bg-rose-100 text-lg dark:bg-rose-900">🚀</span>Deploy &amp; Tools</h3>
+      <ul class="flex flex-wrap gap-2"><li class="chip">Git &amp; GitHub</li><li class="chip">GitHub Pages</li></ul>
+    </div>
+    <div class="card !p-5">
+      <h3 class="mb-3 flex items-center gap-3 font-bold"><span class="grid size-9 place-items-center rounded-full bg-rose-100 text-lg dark:bg-rose-900">📊</span>Office &amp; Automation</h3>
+      <ul class="flex flex-wrap gap-2"><li class="chip">Excel</li><li class="chip">Word</li><li class="chip">Office 365</li><li class="chip">Power Apps</li><li class="chip">Power Automate</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="scroll-mt-16 bg-rose-100/60 px-5 py-12 dark:bg-rose-950/40">
+  <div class="mx-auto max-w-5xl">
+    <h2 class="h2">Featured Projects</h2>
+    <div class="grid gap-6 lg:grid-cols-3 lg:gap-y-0">
+
+      <article id="project-1" class="card flex flex-col lg:row-span-6 lg:grid lg:grid-rows-subgrid lg:gap-y-0">
+        <p class="font-bold text-rose-500">Year 1 · 2024</p>
+        <h3 class="text-xl font-bold">Cine Films</h3>
+        <p class="mt-2">A website where people can find short films about any topic, all in one place.</p>
+        <ul class="my-3 flex flex-wrap content-start gap-2"><li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li></ul>
+        <p><strong>My role:</strong> Designer and Developer.</p>
+        <div class="mt-4 flex flex-wrap items-end gap-2">
+          <a class="btn" href="https://github.com/Ale-nix09/CineFilms" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn btn-alt" href="https://ale-nix09.github.io/CineFilms/" target="_blank" rel="noopener noreferrer">Website</a>
+        </div>
+      </article>
+
+      <article id="project-2" class="card flex flex-col lg:row-span-6 lg:grid lg:grid-rows-subgrid lg:gap-y-0">
+        <p class="font-bold text-rose-500">Year 2 · 2025</p>
+        <h3 class="text-xl font-bold">Payvo</h3>
+        <p class="mt-2">A finance app that helps people manage their money in one simple place.</p>
+        <ul class="my-3 flex flex-wrap content-start gap-2"><li class="chip">Figma</li><li class="chip">Python</li><li class="chip">Next.js</li></ul>
+        <p><strong>My role:</strong> Lead Designer and Developer.</p>
+        <div class="mt-4 flex flex-wrap items-end gap-2">
+          <a class="btn" href="https://www.figma.com/design/TSO01qcTDt5xMdigvAFJxY/Payvo?node-id=0-1&amp;t=luKe1XY71jw7BE5W-1" target="_blank" rel="noopener noreferrer">Figma</a>
+          <a class="btn btn-alt" href="https://payvo-gules.vercel.app/LandingPage/" target="_blank" rel="noopener noreferrer">Website</a>
+        </div>
+      </article>
+
+      <article id="project-3" class="card flex flex-col lg:row-span-6 lg:grid lg:grid-rows-subgrid lg:gap-y-0">
+        <p class="font-bold text-rose-500">Year 3 · 2026</p>
+        <h3 class="text-xl font-bold">Finans</h3>
+        <p class="mt-2">A website that helps micro and small businesses control their finances. Built as a team project.</p>
+        <ul class="my-3 flex flex-wrap content-start gap-2"><li class="chip">Shadcn</li><li class="chip">Clerk</li><li class="chip">Next.js</li><li class="chip">Prisma</li><li class="chip">Supabase</li><li class="chip">PostgreSQL</li></ul>
+        <p><strong>My role:</strong> Developer, Designer and Presenter.</p>
+        <div class="mt-4 flex flex-wrap items-end gap-2">
+          <a class="btn" href="https://www.figma.com/design/PjCLVTKKoni78nfx81Y1y9/Finans?node-id=0-1&amp;t=Jqrllwtn06tqSCXZ-1" target="_blank" rel="noopener noreferrer">Figma</a>
+          <a class="btn btn-alt" href="https://finans-website.onrender.com/" target="_blank" rel="noopener noreferrer">Website</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="mx-auto max-w-5xl scroll-mt-16 px-5 py-12">
+  <h2 class="h2">Education &amp; Certificates</h2>
+  <p class="mb-6">Courses completed on Platzi and Microsoft Office Specialist certifications. <a class="font-bold underline" href="https://platzi.com/@6376057/" target="_blank" rel="noopener noreferrer">See my Platzi profile</a>.</p>
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <article class="card flex flex-col">
+      <img class="mb-4 h-auto w-full rounded-2xl border-2 border-rose-200 dark:border-rose-900" src="img/MicrosoftWord.jpeg" alt="Platzi certificate: Microsoft Word, Creating Templates and Forms" loading="lazy">
+      <h3 class="font-bold">Microsoft Word: Creating Templates and Forms</h3>
+      <p class="mb-3 text-sm opacity-70">Platzi · Sep 2026 · 10 hours</p>
+      <a class="btn btn-alt mt-auto self-start" href="img/MicrosoftWord.jpeg" target="_blank" rel="noopener noreferrer">View certificate</a>
+    </article>
+    <article class="card flex flex-col">
+      <img class="mb-4 h-auto w-full rounded-2xl border-2 border-rose-200 dark:border-rose-900" src="img/PowerApps.jpeg" alt="Platzi certificate: Power Apps and Power Automate" loading="lazy">
+      <h3 class="font-bold">Power Apps and Power Automate</h3>
+      <p class="mb-3 text-sm opacity-70">Platzi · Nov 2026 · 16 hours</p>
+      <a class="btn btn-alt mt-auto self-start" href="img/PowerApps.jpeg" target="_blank" rel="noopener noreferrer">View certificate</a>
+    </article>
+    <article class="card flex flex-col">
+      <img class="mb-4 h-auto w-full rounded-2xl border-2 border-rose-200 dark:border-rose-900" src="img/Marketing.jpeg" alt="Platzi certificate: Digital Marketing" loading="lazy">
+      <h3 class="font-bold">Digital Marketing</h3>
+      <p class="mb-3 text-sm opacity-70">Platzi · Nov 2026 · 13 hours</p>
+      <a class="btn btn-alt mt-auto self-start" href="img/Marketing.jpeg" target="_blank" rel="noopener noreferrer">View certificate</a>
+    </article>
+    <article class="card flex flex-col">
+      <img class="mb-4 h-auto w-full rounded-2xl border-2 border-rose-200 dark:border-rose-900" src="img/excelExpert.jpeg" alt="Microsoft Office Specialist certificate: Excel Expert" loading="lazy">
+      <h3 class="font-bold">Excel Expert</h3>
+      <p class="mb-3 text-sm opacity-70">Microsoft Office · March 2026</p>
+      <a class="btn btn-alt mt-auto self-start" href="img/excelExpert.jpeg" target="_blank" rel="noopener noreferrer">View certificate</a>
+    </article>
+    <article class="card flex flex-col">
+      <img class="mb-4 h-auto w-full rounded-2xl border-2 border-rose-200 dark:border-rose-900" src="img/excelAssociate.jpeg" alt="Microsoft Office Specialist certificate: Excel Associate" loading="lazy">
+      <h3 class="font-bold">Excel Associate</h3>
+      <p class="mb-3 text-sm opacity-70">Microsoft Office · Nov 2025</p>
+      <a class="btn btn-alt mt-auto self-start" href="img/excelAssociate.jpeg" target="_blank" rel="noopener noreferrer">View certificate</a>
+    </article>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="scroll-mt-16 bg-rose-100/60 px-5 py-12 dark:bg-rose-950/40">
+  <div class="mx-auto max-w-5xl">
+    <h2 class="h2 !mb-3">Let's connect</h2>
+    <p class="mb-8 max-w-prose">Do you want to work together, ask me something or just say hi? You can find me here.</p>
+    <div class="grid gap-5 sm:grid-cols-3">
+      <a class="card flex items-center gap-4" href="mailto:jrosalesjohanna@gmail.com">
+        <span class="grid size-12 shrink-0 place-items-center rounded-full bg-rose-100 text-2xl dark:bg-rose-900">✉️</span>
+        <span class="min-w-0"><span class="block font-bold">Email</span><span class="block truncate text-sm opacity-70">jrosalesjohanna@gmail.com</span></span>
+      </a>
+      <a class="card flex items-center gap-4" href="https://www.linkedin.com/in/johanna-rosales" target="_blank" rel="noopener noreferrer">
+        <span class="grid size-12 shrink-0 place-items-center rounded-full bg-rose-100 text-2xl dark:bg-rose-900">💼</span>
+        <span class="min-w-0"><span class="block font-bold">LinkedIn</span><span class="block truncate text-sm opacity-70">Johanna Rosales</span></span>
+      </a>
+      <a class="card flex items-center gap-4" href="https://github.com/ale-nix09" target="_blank" rel="noopener noreferrer">
+        <span class="grid size-12 shrink-0 place-items-center rounded-full bg-rose-100 text-2xl dark:bg-rose-900">💻</span>
+        <span class="min-w-0"><span class="block font-bold">GitHub</span><span class="block truncate text-sm opacity-70">ale-nix09</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="px-5 py-8 text-center text-sm opacity-70">© 2026 Johanna Alejandra Rosales Cornejo · Made with 🌸 and love</footer>
+
+</body>
+</html>
